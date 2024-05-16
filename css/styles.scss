@@ -1,0 +1,732 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// phone
+.pc-nav{display: none;}
+.gallery-2{display: none;}
+
+.mobile-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin: 10px;
+   
+    background-color: purple;
+    img{
+        display: flex;
+        width: 100px;
+    }
+}
+.hamburger-menu{
+    height: 4rem;
+     width: 4rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+     flex-direction: column;
+     gap: 10px;
+     border: 2px solid purple;
+     position: relative;
+     
+     }
+    .line{
+        background: white;
+        height: 2px;
+        width: 70%;
+    }
+    
+.banner{
+    display: flex;
+    flex-direction: column;
+    .col h1{
+        justify-content: center;
+        font-weight: bolder;
+        margin-left: 10px;
+
+    }
+    p{
+        margin-left: 10px;
+    }
+    .btn-2{
+        display: flex;
+        align-items: center;
+        border: 3px solid purple;
+    }
+    .both{display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;}
+    .play{
+        display: flex;
+        height: 20px;
+        margin-top: 10px;
+        color: purple;
+        gap: 10px;
+        margin-left: 10px;
+        
+        
+    }
+    .tick{
+        display: flex;
+        height: 20px;
+        margin-top: 5px;
+        gap: 10px;
+        margin-left: 10px;
+    }
+    .col-3{
+        display: flex;
+        flex-direction: column;
+        .pic-1{
+            display: flex;
+            width: 10px !important;
+            height: 300px;
+            gap: 70px;
+           
+    img{
+        width: 5rem;
+        margin-left: 25px;
+        margin-top: 50px;
+    }
+            
+        }
+    }
+    .col{
+        // display: flex;
+        flex-direction: column;
+        // height: 15vh;
+        // // .pic-1{height: 50px;
+        // width: fit-content;}
+        .pic-1{
+            display: flex;
+            align-items: center;
+            // justify-content: space-evenly;
+            gap: 10px;
+
+            // margin-right: 50px;
+            // width: 10vw;
+            // height: 15vh;
+
+            img{
+                width: 5rem;
+                height: 5vh;
+                margin-left: 250px;
+                
+
+                // margin-top: 300px;
+            }
+            // height: 15vh;
+            // width: 50px;
+            // width: 50px;
+            // height: 150px;
+           
+        }
+        // .pic-2{
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     // margin-top: 10px;
+        //     margin-left: 70px;
+        //     // height: 15vh;
+        //     // width: 0px;
+        //     // height: 50px;
+        //     img{
+        //         width: 5rem;
+        //         margin-bottom: 200px;
+        //     }
+        }
+        .pic-3{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+            // margin-right: 50px;
+            gap: 5px;
+            position: absolute;
+            margin-left: 20px;
+            img{
+                width: 5rem;
+                margin-bottom: 9rem;
+                gap: 70px;
+                margin-left: 90px;
+                // margin-top: 10px;
+            }
+        }
+        // .pic-4{
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     margin-top: 10px;
+        //     margin-left: 70px;
+        //     img{
+        //         width: 5rem;
+        //     }
+        // }
+    }
+    // .col-md-6{
+    //     display: flex;
+    //     h2{
+    //         display: flex;
+    //         text-align: center;
+    //         justify-content: center;
+    //     }
+    // }
+   
+    
+    .about-us{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 5px;
+        // margin-left: 20px;
+        // .image{
+        //     display: flex;
+        //     // width: 50px;
+        //     // height: 2rem;
+        //   .img-2{
+        //     display: flex;
+        //     width: 30px;
+        //     margin-top: 40px;
+        //   }
+        .col-md-6{
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            width: 250px;
+            justify-content: center;
+            margin-top: 220px;
+            margin-left: 50px;
+            .but{
+                display: flex;
+                background-color: purple;
+                justify-content: center;
+            }
+        }
+        .head{
+            font-size: larger;
+            font-weight: bolder;
+            // margin-top: 10px;
+        }
+        }
+        .btn-1{
+            display: flex;
+            background-color: purple !important;
+            color: white;
+            height: 40px;
+            width: 120px;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .btn-2{
+            box-shadow: none;
+            height: 40px;
+        }
+        .image{
+            display: flex;
+            // align-items: center;
+            // justify-content: center;
+            margin-top: 10px;
+            // margin-left: 70px;
+            gap: 80px;
+            .img-1{
+                display: flex;
+                width: 80px;
+                height: 200px;
+                // margin-top: 50px;
+                margin-left: 30px;
+            }
+            .img-2{
+                display: flex;
+               width: 100px; 
+               height: 200px;
+            }
+        }
+        .head{
+            display: flex;
+            margin-top: 290px;
+            margin-left: 30px;
+            font-weight: bolder;
+            font-size: larger;
+        }
+        .services{
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            margin-top: -90px;
+           
+            .service{
+                background-image: url(../images/IMAGEZ/Rectangle\ 27.png);
+                height: 55vh;
+                width: 30%;
+                margin-top: 190px;
+                margin-left: 5px;
+                .arrow{
+                    display: flex;
+                    height: 20px;
+                    justify-content: end;
+                    flex-direction: row;
+                    margin-top: 5px;
+                    background-color: purple;
+                    width: 20px;
+                    margin-left: 100px;
+                    // margin-top: 300px;
+                }
+            }
+            .service p{
+                display: flex;
+                justify-content: center;
+                color: white;
+                margin-top: 340px;
+                
+            }
+            .digital{
+                background-color: purple;
+                color: white;
+                width: 150px;
+                margin-top: 190px;
+                height: 55vh;
+               
+                .x{
+                    display: flex;
+                    height: 20px;
+                    justify-content: end;
+                    background-color: white;
+                    width: 20px;
+                    margin-left: 125px;
+                    margin-top: 50px;
+                    // align-items: center;
+                }
+            }
+            .green{background-image: url(../images/IMAGEZ/Rectangle\ 47.png);
+                width: 100px;
+                height: 55vh;
+                margin-top: 190px;
+                margin-right: 5px;
+                background-repeat: no-repeat;
+                .arrow{
+                    display: flex;
+                    height: 20px;
+                    justify-content: end;
+                    flex-direction: row;
+                    margin-top: 380px;
+                    background-color: purple;
+                    width: 20px;
+                    margin-left: 80px;
+                }
+            }
+        }
+        .happy-clients{
+            .head{font-size: larger;
+            font-weight: bolder;}
+            .tt{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                img{width: 90%;
+            }
+            .tt p{
+                margin-left: 10px;
+            }
+            
+        }
+        .miranda{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img{width: 90%;
+            margin-left: 10px;}
+          }
+    }
+    .insta{
+        .instagram{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .ins{
+            display: flex;
+            font-weight: lighter;
+            font-style: italic;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+       .gallery{
+        display: flex;
+        flex-direction: column;
+        width: 65vw;
+        align-items: center;
+        margin-left: 55px;
+        gap: 5px;
+       }
+    }
+    
+    .tig{
+        // margin-top: 120vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        button{
+            height: 50px;
+            width: 150px;
+            background-color: purple;
+            color: white;
+        }
+    }
+    .footer{
+        background-color: purple;
+        // display: flex;
+        .copy{
+            display: flex;
+            gap: 5px;
+            color: white;
+           img{
+            width: 20px;
+            height: 20px !important;
+            margin-top: 10px;
+           }
+        }
+        .icons{
+            display: flex;
+            gap: 30px;
+            margin-left: 5px;
+            // justify-content: center;
+            // margin-bottom: 30px;
+            img{
+                width: 30px;
+                height: 30px;
+                margin-top: 10px;
+                
+        }
+    }
+    // 
+    a{
+        color: white;
+        margin-left: 20px;
+    }
+    p{
+        color: white;
+        margin-left: 20px;
+    }
+    }
+    .all{
+        .mmm{
+            display: flex;
+        }
+       
+    }
+.hre{
+margin-left: 20px;
+  
+    .con{
+        display: flex;
+        // position: absolute;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .mail{
+        display: flex;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .address{
+        display: flex;
+        // position: relative;
+        img{
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+    .mobile-nav{display: none;}
+    .gallery-2{display: block;}
+    
+   .pc-nav{
+    display: flex;
+    justify-content: space-around;
+    ul{display: flex;
+        align-items: center;
+        gap: 50px;
+        margin-right: 50px;
+        font-size: larger;
+        font-weight: bolder;
+    }
+
+   } 
+   .dark-mode{background-color: green;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        margin-top: 10px;
+    }
+ .banner{
+    .col h1{
+        margin-top: 30px;
+    }
+    .both{
+        display: flex;
+        margin-right: 400px;
+    }
+    .col-3{
+        display: flex;
+        margin-left: 380px;
+        margin-right: 20px;
+        margin-top: -250px;
+    }
+    .play{
+        margin-top: 10px;
+    }
+    .tick{
+        margin-top: 10px;
+    }
+ }
+ .about{
+    margin-top: 50px;
+    .about-us h2{
+        text-align: start;
+    }
+    p{
+      display: flex;  
+      margin-left: 40px;
+     text-align: start ;
+     width: 50vw;
+
+    }
+    .abt{
+      display: flex;  
+      flex-direction: column;
+      
+    }
+    .image{
+         margin-left: 15px;
+         .img-2{
+            margin-left: -50px;
+            margin-top: 140px;
+            // width: 100px;
+         }
+         
+    }
+    .col-md-6{
+        display: flex;
+        margin-left: 450px;
+        margin-top: -350px;
+        p{
+            width: 280px;
+        }
+     }
+     .col-md-6{
+        img{
+            width: 300px;
+            height: 300px;
+        }
+        p{
+            display: flex;
+            margin-left: -1px;
+        }
+        button{
+            color: white;
+            border: none;
+            height: 90px;
+        }
+     }
+ }
+ .head{
+    p{
+        font-size: larger;
+        font-weight: 900;
+    }
+
+ }
+ .services{
+    gap: 25px;
+    margin-left: 50px;
+    .digital{
+        width: 30vw;
+        letter-spacing: 2px;
+        line-height: 2rem;
+        height: auto;
+    }
+    .green{
+        width: 30vw;
+        height: auto;
+    }
+    .service{
+        width: 30vw;
+        height: auto;
+    }
+ }
+ .happy-clients{
+    margin-top: -150px;
+    p{
+        font-size: large;
+        margin-left: -10px;
+    }
+    .tt{
+        width: 50vw;
+        margin-top: 20px;
+        p{
+            width: 300px;
+        }
+    }
+    .miranda{
+        width: 50vw;
+        margin-left: 400px;
+        margin-top: -500px;
+        p{
+            width: 300px;
+        }
+    }
+ }
+ .gallery-container{
+    .gallery{
+        display: flex !important;
+        // margin-left:100px ;
+        img{
+            // display: flex;
+            width: 100px;
+            height: 150px;
+            flex-direction: row;
+            gap: 50px;
+        }
+     }
+     .gallery-2{
+        display: flex;
+        gap: 100px;
+        width: 10px;
+        height: 300px;
+        margin-left: 10px;
+        img{
+            width: 150px;
+            
+        }
+     }
+ }
+ .tig{
+    border: none;
+    margin: 10px;
+ }
+ .footer{
+    img{
+        width: 200px;
+    }
+   p{
+    font-size: large;
+    margin-left: -3px;
+
+   } 
+   .all{
+    display: flex;
+    margin-left: 350px;
+    margin-top: -200px;
+    .hre{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .con{gap: 5px;}
+        .mail{gap: 5px;}
+        .address{gap: 5px;}
+    }
+   }
+ }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}

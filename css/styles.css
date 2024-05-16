@@ -1,0 +1,630 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.pc-nav {
+  display: none;
+}
+
+.gallery-2 {
+  display: none;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: purple;
+}
+.mobile-nav img {
+  display: flex;
+  width: 100px;
+}
+
+.hamburger-menu {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid purple;
+  position: relative;
+}
+
+.line {
+  background: white;
+  height: 2px;
+  width: 70%;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+}
+.banner .col h1 {
+  justify-content: center;
+  font-weight: bolder;
+  margin-left: 10px;
+}
+.banner p {
+  margin-left: 10px;
+}
+.banner .btn-2 {
+  display: flex;
+  align-items: center;
+  border: 3px solid purple;
+}
+.banner .both {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.banner .play {
+  display: flex;
+  height: 20px;
+  margin-top: 10px;
+  color: purple;
+  gap: 10px;
+  margin-left: 10px;
+}
+.banner .tick {
+  display: flex;
+  height: 20px;
+  margin-top: 5px;
+  gap: 10px;
+  margin-left: 10px;
+}
+.banner .col-3 {
+  display: flex;
+  flex-direction: column;
+}
+.banner .col-3 .pic-1 {
+  display: flex;
+  width: 10px !important;
+  height: 300px;
+  gap: 70px;
+}
+.banner .col-3 .pic-1 img {
+  width: 5rem;
+  margin-left: 25px;
+  margin-top: 50px;
+}
+.banner .col {
+  flex-direction: column;
+}
+.banner .col .pic-1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.banner .col .pic-1 img {
+  width: 5rem;
+  height: 5vh;
+  margin-left: 250px;
+}
+.banner .pic-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 5px;
+  position: absolute;
+  margin-left: 20px;
+}
+.banner .pic-3 img {
+  width: 5rem;
+  margin-bottom: 9rem;
+  gap: 70px;
+  margin-left: 90px;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 5px;
+}
+.about-us .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  width: 250px;
+  justify-content: center;
+  margin-top: 220px;
+  margin-left: 50px;
+}
+.about-us .col-md-6 .but {
+  display: flex;
+  background-color: purple;
+  justify-content: center;
+}
+.about-us .head {
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.btn-1 {
+  display: flex;
+  background-color: purple !important;
+  color: white;
+  height: 40px;
+  width: 120px;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-2 {
+  box-shadow: none;
+  height: 40px;
+}
+
+.image {
+  display: flex;
+  margin-top: 10px;
+  gap: 80px;
+}
+.image .img-1 {
+  display: flex;
+  width: 80px;
+  height: 200px;
+  margin-left: 30px;
+}
+.image .img-2 {
+  display: flex;
+  width: 100px;
+  height: 200px;
+}
+
+.head {
+  display: flex;
+  margin-top: 290px;
+  margin-left: 30px;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.services {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: -90px;
+}
+.services .service {
+  background-image: url(../images/IMAGEZ/Rectangle\ 27.png);
+  height: 55vh;
+  width: 30%;
+  margin-top: 190px;
+  margin-left: 5px;
+}
+.services .service .arrow {
+  display: flex;
+  height: 20px;
+  justify-content: end;
+  flex-direction: row;
+  margin-top: 5px;
+  background-color: purple;
+  width: 20px;
+  margin-left: 100px;
+}
+.services .service p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: 340px;
+}
+.services .digital {
+  background-color: purple;
+  color: white;
+  width: 150px;
+  margin-top: 190px;
+  height: 55vh;
+}
+.services .digital .x {
+  display: flex;
+  height: 20px;
+  justify-content: end;
+  background-color: white;
+  width: 20px;
+  margin-left: 125px;
+  margin-top: 50px;
+}
+.services .green {
+  background-image: url(../images/IMAGEZ/Rectangle\ 47.png);
+  width: 100px;
+  height: 55vh;
+  margin-top: 190px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+}
+.services .green .arrow {
+  display: flex;
+  height: 20px;
+  justify-content: end;
+  flex-direction: row;
+  margin-top: 380px;
+  background-color: purple;
+  width: 20px;
+  margin-left: 80px;
+}
+
+.happy-clients .head {
+  font-size: larger;
+  font-weight: bolder;
+}
+.happy-clients .tt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.happy-clients .tt img {
+  width: 90%;
+}
+.happy-clients .tt .tt p {
+  margin-left: 10px;
+}
+.happy-clients .miranda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.happy-clients .miranda img {
+  width: 90%;
+  margin-left: 10px;
+}
+
+.insta .instagram {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.insta .ins {
+  display: flex;
+  font-weight: lighter;
+  font-style: italic;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.insta .gallery {
+  display: flex;
+  flex-direction: column;
+  width: 65vw;
+  align-items: center;
+  margin-left: 55px;
+  gap: 5px;
+}
+
+.tig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tig button {
+  height: 50px;
+  width: 150px;
+  background-color: purple;
+  color: white;
+}
+
+.footer {
+  background-color: purple;
+}
+.footer .copy {
+  display: flex;
+  gap: 5px;
+  color: white;
+}
+.footer .copy img {
+  width: 20px;
+  height: 20px !important;
+  margin-top: 10px;
+}
+.footer .icons {
+  display: flex;
+  gap: 30px;
+  margin-left: 5px;
+}
+.footer .icons img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+.footer a {
+  color: white;
+  margin-left: 20px;
+}
+.footer p {
+  color: white;
+  margin-left: 20px;
+}
+
+.all .mmm {
+  display: flex;
+}
+
+.hre {
+  margin-left: 20px;
+}
+.hre .con {
+  display: flex;
+}
+.hre .con img {
+  width: 20px;
+  height: 20px;
+}
+.hre .mail {
+  display: flex;
+}
+.hre .mail img {
+  width: 20px;
+  height: 20px;
+}
+.hre .address {
+  display: flex;
+}
+.hre .address img {
+  width: 20px;
+  height: 20px;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .mobile-nav {
+    display: none;
+  }
+  .gallery-2 {
+    display: block;
+  }
+  .pc-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  .pc-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-right: 50px;
+    font-size: larger;
+    font-weight: bolder;
+  }
+  .dark-mode {
+    background-color: green;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin-top: 10px;
+  }
+  .banner .col h1 {
+    margin-top: 30px;
+  }
+  .banner .both {
+    display: flex;
+    margin-right: 400px;
+  }
+  .banner .col-3 {
+    display: flex;
+    margin-left: 380px;
+    margin-right: 20px;
+    margin-top: -250px;
+  }
+  .banner .play {
+    margin-top: 10px;
+  }
+  .banner .tick {
+    margin-top: 10px;
+  }
+  .about {
+    margin-top: 50px;
+  }
+  .about .about-us h2 {
+    text-align: start;
+  }
+  .about p {
+    display: flex;
+    margin-left: 40px;
+    text-align: start;
+    width: 50vw;
+  }
+  .about .abt {
+    display: flex;
+    flex-direction: column;
+  }
+  .about .image {
+    margin-left: 15px;
+  }
+  .about .image .img-2 {
+    margin-left: -50px;
+    margin-top: 140px;
+  }
+  .about .col-md-6 {
+    display: flex;
+    margin-left: 450px;
+    margin-top: -350px;
+  }
+  .about .col-md-6 p {
+    width: 280px;
+  }
+  .about .col-md-6 img {
+    width: 300px;
+    height: 300px;
+  }
+  .about .col-md-6 p {
+    display: flex;
+    margin-left: -1px;
+  }
+  .about .col-md-6 button {
+    color: white;
+    border: none;
+    height: 90px;
+  }
+  .head p {
+    font-size: larger;
+    font-weight: 900;
+  }
+  .services {
+    gap: 25px;
+    margin-left: 50px;
+  }
+  .services .digital {
+    width: 30vw;
+    letter-spacing: 2px;
+    line-height: 2rem;
+    height: auto;
+  }
+  .services .green {
+    width: 30vw;
+    height: auto;
+  }
+  .services .service {
+    width: 30vw;
+    height: auto;
+  }
+  .happy-clients {
+    margin-top: -150px;
+  }
+  .happy-clients p {
+    font-size: large;
+    margin-left: -10px;
+  }
+  .happy-clients .tt {
+    width: 50vw;
+    margin-top: 20px;
+  }
+  .happy-clients .tt p {
+    width: 300px;
+  }
+  .happy-clients .miranda {
+    width: 50vw;
+    margin-left: 400px;
+    margin-top: -500px;
+  }
+  .happy-clients .miranda p {
+    width: 300px;
+  }
+  .gallery-container .gallery {
+    display: flex !important;
+  }
+  .gallery-container .gallery img {
+    width: 100px;
+    height: 150px;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .gallery-container .gallery-2 {
+    display: flex;
+    gap: 100px;
+    width: 10px;
+    height: 300px;
+    margin-left: 10px;
+  }
+  .gallery-container .gallery-2 img {
+    width: 150px;
+  }
+  .tig {
+    border: none;
+    margin: 10px;
+  }
+  .footer img {
+    width: 200px;
+  }
+  .footer p {
+    font-size: large;
+    margin-left: -3px;
+  }
+  .footer .all {
+    display: flex;
+    margin-left: 350px;
+    margin-top: -200px;
+  }
+  .footer .all .hre {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer .all .hre .con {
+    gap: 5px;
+  }
+  .footer .all .hre .mail {
+    gap: 5px;
+  }
+  .footer .all .hre .address {
+    gap: 5px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=styles.css.map */
